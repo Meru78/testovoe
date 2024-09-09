@@ -5,7 +5,7 @@ class Parser {
         let fileData: any = fs.readFileSync('../basic.txt').toString()
 
         fileData = fileData.split('/n')
-        fileData = fileData.map((el)=>el.split(':'))
+        fileData = fileData.map((el: string)=>el.split(':'))
         
     }
 }
